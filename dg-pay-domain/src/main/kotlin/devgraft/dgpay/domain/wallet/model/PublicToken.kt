@@ -1,4 +1,3 @@
 package devgraft.dgpay.domain.wallet.model
 
-class PublicToken {
-}
+data class PublicToken(val value: String)
