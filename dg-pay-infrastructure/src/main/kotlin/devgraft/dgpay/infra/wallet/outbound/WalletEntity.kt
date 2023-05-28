@@ -12,8 +12,8 @@ import javax.persistence.Table
 internal class WalletEntity(
     @Column(name = "publicToken", nullable = false, unique = true)
     val publicToken: String,
-    @Column(name = "secretToken", nullable = false, unique = true)
-    val secretToken: String,
+    @Column(name = "privateToken", nullable = false, unique = true)
+    val privateToken: String,
     @Id @GeneratedValue(strategy = IDENTITY)
     val id: Long?=null
 )

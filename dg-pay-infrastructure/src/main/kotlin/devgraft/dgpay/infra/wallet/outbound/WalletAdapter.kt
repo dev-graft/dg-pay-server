@@ -11,7 +11,7 @@ internal class WalletAdapter(
     override fun addWallet(wallet: Wallet) {
         val walletEntity = WalletEntity(
             publicToken = wallet.publicToken.value,
-            secretToken = wallet.privateToken.value
+            privateToken = wallet.privateToken.value
         )
         walletRepository.save(walletEntity)
     }
