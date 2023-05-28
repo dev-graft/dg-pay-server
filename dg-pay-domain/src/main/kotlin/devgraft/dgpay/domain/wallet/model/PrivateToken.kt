@@ -1,3 +1,3 @@
 package devgraft.dgpay.domain.wallet.model
 
-data class SecretToken(val value: String)
+data class PrivateToken(val value: String)

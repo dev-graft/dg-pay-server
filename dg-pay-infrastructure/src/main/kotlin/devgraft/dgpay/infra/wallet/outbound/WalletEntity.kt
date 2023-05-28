@@ -9,7 +9,7 @@ import javax.persistence.Table
 
 @Table(name = "wallet")
 @Entity
-class WalletEntity(
+internal class WalletEntity(
     @Column(name = "publicToken", nullable = false, unique = true)
     val publicToken: String,
     @Column(name = "secretToken", nullable = false, unique = true)

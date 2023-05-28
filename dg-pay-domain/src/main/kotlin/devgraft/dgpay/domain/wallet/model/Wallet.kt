@@ -6,5 +6,5 @@ package devgraft.dgpay.domain.wallet.model
  */
 class Wallet(
     val publicToken: PublicToken,
-    val secretToken: SecretToken
+    val privateToken: PrivateToken
 )
