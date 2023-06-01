@@ -9,10 +9,7 @@ internal class WalletAdapter(
     private val walletRepository: WalletRepository
 ) : WalletPort {
     override fun addWallet(wallet: Wallet) {
-        val walletEntity = WalletEntity(
-            publicToken = wallet.publicToken.value,
-            privateToken = wallet.privateToken.value
-        )
+        val walletEntity = wallet.toEntity()
         walletRepository.save(walletEntity)
     }
 }

@@ -1,5 +1,6 @@
 package devgraft.dgpay.infra.wallet.outbound
 
+import devgraft.dgpay.domain.wallet.model.Wallet
 import javax.persistence.Column
 import javax.persistence.Entity
 import javax.persistence.GeneratedValue
@@ -17,3 +18,10 @@ internal class WalletEntity(
     @Id @GeneratedValue(strategy = IDENTITY)
     val id: Long?=null
 )
+
+internal fun Wallet.toEntity() : WalletEntity {
+    return WalletEntity(
+        publicToken = this.publicToken.value,
+        privateToken = this.privateToken.value
+    )
+}
