@@ -10,7 +10,7 @@ class WalletApi(private val walletGenerateUseCase: WalletGenerateUseCase) {
 
     @PostMapping("wallets")
     private fun generate() : WalletGeneratedResponse {
-        val wallet = walletGenerateUseCase.generate()
+        val wallet = walletGenerateUseCase.generateWallet()
         return toResponse(wallet)
     }
 }

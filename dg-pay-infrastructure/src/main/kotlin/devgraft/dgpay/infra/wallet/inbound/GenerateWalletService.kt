@@ -13,10 +13,10 @@ import java.util.Base64
 
 @Service
 internal class GenerateWalletService(private val walletPort: WalletPort) : WalletGenerateUseCase {
-    override fun generate(): Wallet {
+    override fun generateWallet(): Wallet {
         val generateKey = generateKey()
         val wallet = Wallet(generateKey.first, generateKey.second)
-        walletPort.addWallet(wallet)
+        walletPort.storeWallet(wallet)
         return wallet
     }
 }

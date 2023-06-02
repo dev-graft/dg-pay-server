@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component
 internal class WalletAdapter(
     private val walletRepository: WalletRepository
 ) : WalletPort {
-    override fun addWallet(wallet: Wallet) {
+    override fun storeWallet(wallet: Wallet) {
         val walletEntity = wallet.toEntity()
         walletRepository.save(walletEntity)
     }
