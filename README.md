@@ -17,16 +17,6 @@ DevGraft Pay는 현금성을 지니지 않은 포인트를 제공하여 결제�
 
 ### :framed_picture: 서비스 이미지
 
----
-
-
-### :pushpin: 참여 팀원
-|     [팀원 닉네임](팀원-프로필-주소)      |
-|:----------------------------:|
-|  <img src="" width="100px">  |
-| BE, FE, IOS, ANDROID, DESIGN |
-|            한줄 설명             |
-
 --- 
 ### :screwdriver: 기술 스택
 <p align="center">
